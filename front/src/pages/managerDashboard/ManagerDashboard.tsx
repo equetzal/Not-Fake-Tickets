@@ -8,11 +8,29 @@ interface PropsSideBar {
 const SideBar: FC<PropsSideBar> = ({ setContent }: PropsSideBar) => {
   return (
     <div className={styles.dashboardSidebar}>
-      SideBar
-      <ul>
-        <li onClick={() => setContent(AvailableContents.ejemplo)}>ejemplo</li>
-        <li onClick={() => setContent(AvailableContents.popo)}>popo</li>
-      </ul>
+      <div className={styles.sidebarTitle}>
+        <h3>No Fake Tikets</h3>
+      </div>
+      <div className={styles.buttonsContainer}>
+        <div
+          className={styles.sideBarButton}
+          onClick={() => setContent(AvailableContents.YourEvents)}
+        >
+          Tus Eventos
+        </div>
+        <div
+          className={styles.sideBarButton}
+          onClick={() => setContent(AvailableContents.CreateEvent)}
+        >
+          Create Event
+        </div>
+      </div>
+      <div
+        className={styles.exitButton}
+        onClick={() => setContent(AvailableContents.CreateEvent)}
+      >
+        Salir
+      </div>
     </div>
   );
 };
@@ -22,17 +40,21 @@ interface PropsContent {
 }
 
 const Content: FC<PropsContent> = ({ contentToLoad }: PropsContent) => {
-  return <div>{`Content ${AvailableContents[contentToLoad]}`}</div>;
+  return (
+    <div
+      className={styles.contentContainer}
+    >{`Content ${AvailableContents[contentToLoad]}`}</div>
+  );
 };
 
 enum AvailableContents {
-  ejemplo,
-  popo,
+  YourEvents,
+  CreateEvent,
 }
 
 const ManagerDashboard: FC = () => {
   const [content, setContent] = useState<AvailableContents>(
-    AvailableContents.ejemplo
+    AvailableContents.YourEvents
   );
 
   return (
