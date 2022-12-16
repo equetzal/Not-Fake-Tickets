@@ -1,6 +1,6 @@
 import { useAccount, useReadState, useSendMessage } from '@gear-js/react-hooks';
 import { useMemo } from 'react';
-import { Params, Token } from 'types';
+import { Params, Token } from '../types';
 import { useParams } from 'react-router-dom';
 import { AnyJson } from '@polkadot/types/types';
 import { useWasm } from './context';

@@ -1,7 +1,7 @@
 import { getWasmMetadata, Hex, Metadata } from '@gear-js/api';
 import { ProviderProps, useAlert } from '@gear-js/react-hooks';
 import { createContext, useEffect, useState } from 'react';
-import { ADDRESS } from 'consts';
+import { ADDRESS } from '../consts';
 
 type Result = {
   id: Hex;
