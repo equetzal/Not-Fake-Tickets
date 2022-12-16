@@ -28,6 +28,7 @@ const Landing: FC<Props> = ({setCurrentApp}:Props) => {
               <Route path="/Events" element={<Events />} />
             </Routes>
           </div>
+          <Ticket_nav />
           <Footer setCurrentApp={setCurrentApp}/>
         </>
       );
