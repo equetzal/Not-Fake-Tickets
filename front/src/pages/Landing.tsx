@@ -1,4 +1,4 @@
-import './App.css';
+import '../App.css';
 
 
 import { Route, Routes } from 'react-router-dom';
@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from '../components/nav/Nav';
 
 import Home from './Home';
-import styles from './App.module.css';
+import styles from '../App.module.css';
 import Events from './Events';
 import Ticket from '../components/ticket/ticket';
 
