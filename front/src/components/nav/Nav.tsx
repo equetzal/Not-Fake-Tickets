@@ -1,9 +1,14 @@
 import { FC, ReactNode } from 'react';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import { validApps } from '../../App';
 
 import styles from './Navbar.module.css';
 
-const Navbar: FC = () => {
+interface Props{
+  setCurrentApp: React.Dispatch<React.SetStateAction<validApps>>,
+}
+
+const Navbar: FC<Props> = ({setCurrentApp}:Props) => {
   return (
     <nav className={styles.nav}>
       <Link to="/" className={styles.siteTitle}><h3>No Fake Tickets</h3>

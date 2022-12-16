@@ -1,12 +1,22 @@
-import './App.css';
+import { FC } from 'react';
+import { validApps } from '../App';
+import '../App.css';
 
-function login(){
-    return (
+interface Props{
+    userType: 'manager' | 'user',
+    setCurrentApp: React.Dispatch<React.SetStateAction<validApps>>,
+}
+
+const Login: FC<Props> = ({userType, setCurrentApp}:Props) => {
+    return ( 
         <div className='login'>
-            Hola
+            Here you are supposed to do something with your wallet
+            <button onClick={() => {
+                setCurrentApp(userType == 'manager' ? validApps.userProfile : validApps.managerDashboard);
+            }}>Log In</button>
         </div>
     );
 }
 
 
-export default login;
+export default Login;

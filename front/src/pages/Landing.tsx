@@ -10,19 +10,23 @@ import Home from './Home';
 import styles from '../App.module.css';
 import Events from './Events';
 import Footer from '../components/footer/Footer';
+import { validApps } from '../App';
 
+interface Props{
+  setCurrentApp: React.Dispatch<React.SetStateAction<validApps>>,
+}
 
-const Landing: FC = () => {
+const Landing: FC<Props> = ({setCurrentApp}:Props) => {
     return (
         <>
-          <Navbar />
+          <Navbar setCurrentApp={setCurrentApp}/>
           <div className={styles.container}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/Events" element={<Events />} />
             </Routes>
           </div>
-          <Footer/>
+          <Footer setCurrentApp={setCurrentApp}/>
         </>
       );
 }

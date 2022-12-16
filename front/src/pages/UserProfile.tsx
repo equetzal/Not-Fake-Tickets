@@ -1,13 +1,13 @@
 import { FC } from 'react';
 import '../App.css';
 
-const ManagerDashboard : FC = () => {
+const UserProfile : FC = () => {
     return (
         <div>
-            Hola Manager gg
+            Hola User raro
         </div>
     );
 }
 
 
-export default ManagerDashboard;
+export default UserProfile;
