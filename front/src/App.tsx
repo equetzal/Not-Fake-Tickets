@@ -1,8 +1,8 @@
-import { FC, useState } from 'react';
-import Landing from './pages/Landing';
-import Login from './pages/Login';
-import ManagerDashboard from './pages/ManagerDashboard';
-import UserProfile from './pages/UserProfile';
+import { FC, useState } from "react";
+import Landing from "./pages/Landing";
+import Login from "./pages/Login";
+import ManagerDashboard from "./pages/managerDashboard/ManagerDashboard";
+import UserProfile from "./pages/UserProfile";
 
 export enum validApps {
   landing,
@@ -12,23 +12,28 @@ export enum validApps {
   userProfile,
 }
 
-const getApp = (app:validApps, setCurrentApp:React.Dispatch<React.SetStateAction<validApps>>) => {
-  switch(app){
+const getApp = (
+  app: validApps,
+  setCurrentApp: React.Dispatch<React.SetStateAction<validApps>>
+) => {
+  switch (app) {
     case validApps.landing:
-      return (<Landing setCurrentApp={setCurrentApp}/>);
+      return <Landing setCurrentApp={setCurrentApp} />;
     case validApps.loginManager:
-      return (<Login setCurrentApp={setCurrentApp} userType='manager'/>);
+      return <Login setCurrentApp={setCurrentApp} userType="manager" />;
     case validApps.loginUser:
-      return (<Login setCurrentApp={setCurrentApp} userType='user'/>);
+      return <Login setCurrentApp={setCurrentApp} userType="user" />;
     case validApps.userProfile:
-      return (<UserProfile/>);
+      return <UserProfile />;
     case validApps.managerDashboard:
-      return (<ManagerDashboard/>);
+      return <ManagerDashboard />;
   }
-}
+};
 
 const App: FC = () => {
-  const [currentApp, setCurrentApp] = useState<validApps>(validApps.landing);
+  const [currentApp, setCurrentApp] = useState<validApps>(
+    validApps.managerDashboard
+  );
 
   return getApp(currentApp, setCurrentApp);
 };
