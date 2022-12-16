@@ -2,15 +2,17 @@ import '../App.css';
 
 
 import { Route, Routes } from 'react-router-dom';
+import { FC } from 'react';
 
 import Navbar from '../components/nav/Nav';
 
 import Home from './Home';
 import styles from '../App.module.css';
 import Events from './Events';
-import Ticket from '../components/ticket/ticket';
+import Footer from '../components/footer/Footer';
 
-function land(){
+
+const Landing: FC = () => {
     return (
         <>
           <Navbar />
@@ -20,10 +22,10 @@ function land(){
               <Route path="/Events" element={<Events />} />
             </Routes>
           </div>
-          <Ticket />
+          <Footer/>
         </>
       );
 }
 
 
-export default land;
+export default Landing;

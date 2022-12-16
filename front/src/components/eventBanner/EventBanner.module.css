@@ -1,0 +1,25 @@
+.eventBanner {
+    background-color: #E7D2EA;
+    width: fit-content;
+    border-radius: 1rem;
+    filter: drop-shadow(0.5rem 0.5rem 0.3rem #d6d6d6);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.eventBannerInnerBox{
+    padding: 1rem;
+}
+
+.eventBannerImage {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    background-color: red;
+}
