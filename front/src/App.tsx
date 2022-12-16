@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -22,5 +21,18 @@ function App() {
     </div>
   );
 }
+
+function landing(){
+  return(
+    <div id='landing'>
+
+    </div>
+  );
+}
+
+function login(){
+
+}
+
 
 export default App;
