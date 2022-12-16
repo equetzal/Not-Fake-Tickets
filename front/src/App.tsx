@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import Landing from './Landing';
-import Login from './components/Login';
+import Landing from './pages/Landing';
+import Login from './pages/Login';
 
 const App: FC = () => {
   return (

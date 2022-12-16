@@ -3,12 +3,12 @@ import './App.css';
 
 import { Route, Routes } from 'react-router-dom';
 
-import Navbar from './Nav';
+import Navbar from '../components/nav/Nav';
 
-import Home from './pages/Home';
+import Home from './Home';
 import styles from './App.module.css';
-import Events from './pages/Events';
-import Ticket from './ticket';
+import Events from './Events';
+import Ticket from '../components/ticket/ticket';
 
 function land(){
     return (
