@@ -1,6 +1,6 @@
-[0m[0m[1m[32m   Compiling[0m nft-marketplace v0.1.1 (/home/alberto/Desktop/Hackaton/nft-marketplace)
+[0m[0m[1m[32m   Compiling[0m nft-marketplace v0.1.1 (/home/alberto/Desktop/Hackaton/Not-Fake-Tickets/SmartContracts)
 [0m[1m[33mwarning[0m[0m[1m: unused import: `H256`[0m
-[0m [0m[0m[1m[38;5;12m--> [0m[0m/home/alberto/Desktop/Hackaton/nft-marketplace/io/src/lib.rs:4:23[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0m/home/alberto/Desktop/Hackaton/Not-Fake-Tickets/SmartContracts/io/src/lib.rs:4:23[0m
 [0m  [0m[0m[1m[38;5;12m|[0m
 [0m[1m[38;5;12m4[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0muse primitive_types::{H256, U256};[0m
 [0m  [0m[0m[1m[38;5;12m| [0m[0m                      [0m[0m[1m[33m^^^^[0m
@@ -8,5 +8,5 @@
 [0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_imports)]` on by default[0m
 
 [0m[0m[1m[33mwarning[0m[1m:[0m `market-io` (lib) generated 1 warning (run `cargo fix --lib -p market-io` to apply 1 suggestion)
-[0m[0m[1m[32m   Compiling[0m nft-marketplace-wasm v0.1.1 (/home/alberto/Desktop/Hackaton/nft-marketplace/target/debug/build/nft-marketplace-4e804d1422919f53/out)
-[0m[0m[1m[32m    Finished[0m dev [optimized + debuginfo] target(s) in 5.15s
+[0m[0m[1m[32m   Compiling[0m nft-marketplace-wasm v0.1.1 (/home/alberto/Desktop/Hackaton/Not-Fake-Tickets/SmartContracts/target/debug/build/nft-marketplace-4e804d1422919f53/out)
+[0m[0m[1m[32m    Finished[0m dev [optimized + debuginfo] target(s) in 8.47s

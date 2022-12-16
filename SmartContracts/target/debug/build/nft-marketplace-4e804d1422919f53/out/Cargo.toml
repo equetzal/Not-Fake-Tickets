@@ -1,7 +1,7 @@
 [dependencies.orig-project]
 default-features = false
 package = 'nft-marketplace'
-path = '/home/alberto/Desktop/Hackaton/nft-marketplace'
+path = '/home/alberto/Desktop/Hackaton/Not-Fake-Tickets/SmartContracts'
 
 [lib]
 crate-type = ['cdylib']
